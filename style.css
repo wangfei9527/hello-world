@@ -2,3 +2,29 @@
 a:hover {
   color: green;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex: auto;
+}
+header {
+  display: flex;
+}
+
+article {
+  display: flex;
+}
+aside {
+  flex: 1;
+}
+
+article {
+  flex: 3;
+}

@@ -1,8 +1,5 @@
-a {
-  color: red;
-}
-a,
-h1 {
+
+a,h1 {
   color: red;
   font-weight: bold;
 }

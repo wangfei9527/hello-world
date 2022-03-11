@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>桑托斯</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="images/ufc.png" class="logo" />
+        <ul>
+          <li><a href="#">EVENTS</a></li>
+          <li><a href="#">RANKINGS</a></li>
+          <li><a href="#">ATHLETES</a></li>
+          <li><a href="#">NEWS</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h1>FAMILIAR FORM</h1>
+        <h4>进入他ufc第六场主赛事，蒂亚戈桑托斯感觉就像老式的“Marreta”</h4>
+        <div>
+          <button type="button" onclick="playVideo('images/Santos.mp4')">
+            <span></span>观看
+          </button>
+          <a href="index.html"
+            ><button type="button"><span></span>返回</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls autoplay id="myVideo">
+        <source src="images/Santos.mp4" type="video/mp4" />
+      </video>
+      <img src="images/close.png" class="close-btn" onclick="stopVideo()" />
+    </div>
+    <script>
+      var videoPlayer = document.getElementById("videoPlayer");
+      var myVideo = document.getElementById("myVideo");
+      function stopVideo() {
+        videoPlayer.style.display = "none";
+      }
+      function playVideo(file) {
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

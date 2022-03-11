@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>Adalab</title>
+    <link href="https://www.adalab.cn/admission.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style1.css" />
+    <script src="thumbnail.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <div class="header">
+        <nav id="navbar">
+          <img src="images/logo.png" class="logo" alt="no" />
+          <ul id="menu">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>PRODUCT</li>
+            <li>CONTACT</li>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function () {
+          if (window.pageYOffset >= menu.offsetTop) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        };
+      </script>
+      <header>
+        <img src="images/heng1.jpg" alt="MDN logo" width="100%" height="60" />
+      </header>
+      <main>
+        <aside>
+          <ul>
+            <li><a href="https://www.baidu.com/">百度一下</a></li>
+            <br />
+            <li><a href="dierye.html">第二页</a></li>
+          </ul>
+        </aside>
+        <article>
+          <img
+            src="images/xiaoying.png"
+            class="small"
+            id="smart-image"
+            alt="加载失败"
+          />
+          <br />
+        </article>
+      </main>
+
+      <footer>
+        by
+        <a
+          href="https://www.zhihu.com/people/wu-liang-fan-ben-ben"
+          target="_blank"
+          >CGTN</a
+        >
+        for <a href="https://www.adalab.cn" target="_blank">Adalab</a>
+      </footer>
+    </div>
+  </body>
+</html>
